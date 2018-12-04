@@ -10,7 +10,7 @@
         android:layout_alignParentBottom="true"
         app:menu= "@menu/bottomicons"
         app:itemTextColor="#000000"
-        android:background="#03DAC6">
+        android:background="#6897BB">
 
 
     </android.support.design.widget.BottomNavigationView>

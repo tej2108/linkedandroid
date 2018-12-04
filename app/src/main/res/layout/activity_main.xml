@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6897BB"
+        android:id="@+id/toolbar">
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="5dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_margin="6dp"
+            android:longClickable="true">
+
+            <ImageView
+                android:id="@+id/person_photo"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/circleshape"
+
+                android:src="@drawable/ic_download" />
+
+
+            <TextView
+                android:id="@+id/txtMain1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtSub"
+                android:layout_width="173dp"
+                android:layout_height="31dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="133dp"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="5dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_margin="4dp"
+            android:longClickable="true">
+
+            <ImageView
+                android:id="@+id/person_photo1"
+                android:layout_width="123dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/circleshape"
+
+                android:src="@drawable/ic_download" />
+
+
+            <TextView
+                android:id="@+id/txtMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/person_photo1"
+                android:layout_toRightOf="@+id/person_photo1"
+                android:padding="10dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMain"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/person_photo1"
+                android:layout_toRightOf="@+id/person_photo1"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    />
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <include layout="@layout/bottomnav"/>
+
+
+</LinearLayout>
